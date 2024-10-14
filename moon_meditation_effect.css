@@ -1,0 +1,66 @@
+body {
+background-color: Black;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+  -webkit-animation: filter 20s infinite;
+          animation: filter 20s infinite;
+}
+
+.wrapper {
+  -webkit-animation: contrast 2s infinite;
+          animation: contrast 2s infinite;
+}
+
+img {
+  max-width: 100%
+  -webkit-animation: filter 8s infinite;
+          animation: filter 8s infinite;
+}
+
+@-webkit-keyframes filter {
+  from {
+    filter: hue-rotate(0deg) saturate(100%);
+  }
+  50% {
+    filter: hue-rotate(360deg) saturate(140%);
+  }
+  to {
+    filter: hue-rotate(0deg) saturate(100%);
+  }
+}
+
+@keyframes filter {
+  from {
+    filter: hue-rotate(0deg) saturate(100%);
+  }
+  50% {
+    filter: hue-rotate(360deg) saturate(140%);
+  }
+  to {
+    filter: hue-rotate(0deg) saturate(100%);
+  }
+}
+@-webkit-keyframes contrast {
+  from {
+    filter: contrast(100%);
+  }
+  80% {
+    filter: contrast(150%);
+  }
+  to {
+    filter: contrast(100%);
+  }
+}
+@keyframes contrast {
+  from {
+    filter: contrast(100%);
+  }
+  80% {
+    filter: contrast(150%);
+  }
+  to {
+    filter: contrast(100%);
+  }
+}
